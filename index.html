@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Snake Game</title>
+</head>
+<body id="body">
+   <h1>Snake Game</h1> 
+
+   <div id="game-stats">
+        <p>No of Moves: <span id="moves">0</span></p>
+        <p>Score: <span id="score">0</span></p>
+   </div>
+
+   <audio id="game-over-audio">
+        <source src="files/mixkit-long-game-over-notification-276.wav" type="audio/wav">
+   </audio>
+
+   <audio id="eaten-food">
+        <source src="files/mixkit-achievement-bell-600.wav" type="audio/wav">
+   </audio>
+
+   <div id="container">
+        <div id="game-area">
+            <div id="snake"></div>
+            <div id="food"></div>
+            <span id ="game-over">GAME OVER</span>
+        </div>
+   </div>
+</body>
+    <script src="script.js"></script>
+</html>
